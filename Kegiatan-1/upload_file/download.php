@@ -1,5 +1,5 @@
 <?php
-$myDir = "c:/xampp/htdocs/PWD/upload_file/";
+$myDir = "c:/xampp/htdocs/PWD/Kegiatan-1/upload_file/";
 $dir = opendir($myDir);
 echo "Isi folder (klik link untuk download : <br>";
 while($tmp = readdir($dir)){
