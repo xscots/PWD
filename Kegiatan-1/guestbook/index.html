@@ -4,43 +4,43 @@
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   </head>
   <body>
-    <div align="center"><strong>
-        <font size="6" face="Courier New, Courier,mono">BUKU
-          TAMU </font>
+    <div align="center"><strong> // Untuk membuat teks berada di tengah dan bold
+        <font size="6" face="Courier New, Courier,mono">BUKU 
+          TAMU </font> // Membuat font dari tulisan yang dikeluarkan sesuai keinginan dengan size atau ukuran 6
       </strong></div>
-    <form name="form1" method="post" action="proses.php">
-      <table width="58%" border="0" align="center">
-        <tr>
-          <td>Nama Lengkap</td>
-          <td><input name="nama" type="text" id="nama"></td>
+    <form name="form1" method="post" action="proses.php"> // Membuat form dengan method post dengan action jika form di submit data akan diberi kepada file proses.php
+      <table width="58%" border="0" align="center"> // Membuat table dengan lebar tabel sebesar 58 % dari 100 %, tidak menggunakan garis atau border, dan dengan align center untuk menempatkannya di tengah
+        <tr> // Merupakan Table Row untuk membuat baris table
+          <td>Nama Lengkap</td> // Merupakan Table Data untuk kolom table dengan isian Nama Lengkap
+          <td><input name="nama" type="text" id="nama"></td> // Membuat tempat input untuk memasukan data nama, dengan type text
         </tr>
         <tr>
-          <td>Alamat</td>
-          <td><input name="alamat" type="text" id="alamat"></td>
+          <td>Alamat</td> // Merupakan Table Data untuk kolom table dengan isian Alamat
+          <td><input name="alamat" type="text" id="alamat"></td> // Membuat tempat input untuk memasukan data Alamat, dengan type text
         </tr>
         <tr>
-          <td>E-Mail</td>
-          <td><input name="email" type="text" id="email"></td>
+          <td>E-Mail</td> // Merupakan Table Data untuk kolom table dengan isian E-Mail
+          <td><input name="email" type="text" id="email"></td> // Membuat tempat input untuk memasukan data Email, dengan type text
         </tr>
         <tr>
           <td>Status</td>
-          <td><select name="status" id="status">
-                <option>Menikah</option>
-                <option>Single</option>
+          <td><select name="status" id="status"> // Sebuah tag dropdown untuk membuat opsi
+                <option>Menikah</option> // Untuk opsi pertama
+                <option>Single</option> // Untuk opsi kedua
               </select>
           </td>
         </tr>
         <tr>
-          <td>Komentar</td>
-          <td><textarea name="komentar" id="komentar"></textarea></td>
+          <td>Komentar</td> // Merupakan Table Data untuk kolom table dengan isian Komentar
+          <td><textarea name="komentar" id="komentar"></textarea></td> // Textarea untuk inputan yang lebih dari 1 baris
         </tr>
         <tr>
-          <td>&nbsp;</td>
-          <td><input type="submit" name="Submit" value="Kirim"><input type="reset" name="Submit2" value="Batal">
+          <td>&nbsp;</td> // Spasi tetap (non-breaking space)
+          <td><input type="submit" name="Submit" value="Kirim"><input type="reset" name="Submit2" value="Batal"> // Merupakan sebuah input untuk mengirimkan data yang telah diisi dari form diatas kepada file proses.php untuk di proses
           </td>
         </tr>
       </table>
     </form>
-    <div align="center"><strong><a href="lihat.php">::Lihat Buku Tamu::</a></strong></div>
+    <div align="center"><strong><a href="lihat.php">::Lihat Buku Tamu::</a></strong></div> // Anchor untuk membuat direct link atau kata yang bisa di click untuk pergi ke link yang dituju
   </body>
 </html>
