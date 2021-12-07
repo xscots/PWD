@@ -10,20 +10,20 @@ if ($_POST["captcha_code"] == $_SESSION["captcha_code"]) {
 $login=mysqli_query($con,$sql);
 $ketemu=mysqli_num_rows($login);
 $r= mysqli_fetch_array($login);
-if ($ketemu > 0){
- $_SESSION['id_user'] = $r['id_user'];
- $_SESSION['password_user'] = $r['password'];
- $_SESSION['no_hp'] = $r['nohp'];
-echo"USER BERHASIL LOGIN<br>";
-echo "id user =",$_SESSION['id_user'],"<br>";
-echo "password=",$_SESSION['password_user'],"<br>";
-echo "No HP   =", $_SESSION['no_hp'], "<br>";
-echo "<a href=logout.php><b>LOGOUT</b></a></center>";
-}
-else{
- echo "<center>Login gagal! username & password tidak benar<br>";
- echo "<a href=form_login.php><b>ULANGI LAGI</b></a></center>";
-}
+  if ($ketemu > 0){
+    $_SESSION['id_user'] = $r['id_user'];
+    $_SESSION['password_user'] = $r['password'];
+    $_SESSION['no_hp'] = $r['nohp'];
+    echo"USER BERHASIL LOGIN<br>";
+    echo "id user =",$_SESSION['id_user'],"<br>";
+    echo "password=",$_SESSION['password_user'],"<br>";
+    echo "No HP   =", $_SESSION['no_hp'], "<br>";
+    echo "<a href=logout.php><b>LOGOUT</b></a></center>";
+  }
+  else{
+    echo "<center>Login gagal! username & password tidak benar<br>";
+    echo "<a href=form_login.php><b>ULANGI LAGI</b></a></center>";
+  }
 mysqli_close($con); 
 } 
 else {
